@@ -21,7 +21,7 @@ source:
         - patches/0001-hotfix-for-libpython-linking-on-macOS.patch
 
 build:
-  number: 0
+  number: 1
   files:
     # SofaPython3 as a weird conception of each module, both
     # a as a python binding module and a SOFA component (which contain CMake config files),
@@ -82,7 +82,7 @@ tests:
       run:
         - cmake-package-check
         - ${{ compiler('c') }}
-        - ${{ compiler('cxx') }}        
+        - ${{ compiler('cxx') }}
 
 about:
   homepage: https://github.com/sofa-framework/SofaPython3
