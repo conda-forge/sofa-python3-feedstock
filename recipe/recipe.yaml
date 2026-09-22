@@ -21,7 +21,7 @@ source:
         - patches/0001-hotfix-for-libpython-linking-on-macOS.patch
 
 build:
-  number: 1
+  number: 2
   files:
     # SofaPython3 as a weird conception of each module, both
     # a as a python binding module and a SOFA component (which contain CMake config files),
